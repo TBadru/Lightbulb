@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title> Lightbulb </title>
+  </head>
+  <body>
+    <style>
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bulb {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+body{
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e1/FullMoon2010.jpg);
+  background-size: cover;
+ }
+  h2 {
+color: white;
+ }
+ p {
+color: white;
+ }
+.img{
+
+ }
+    </style>
+ 
+ 
+  <h2 style="text-align: center;"><strong>Lightbulb</strong></h2>
+
+<p style="text-align: center;" >The lightbulb switches on when the "on" button is pushed and switches back off when the "of" button is pushed.</p>
+    <img style="text-align: center;" class="bulb"  src="https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/412/original/pic_bulboff.gif"> 
+
+    
+    <div>
+      <button class="btn" onclick="toggleLight(1)">Bulb  On</button>
+    </div>
+    <script>
+
+      function toggleLight(n) {
+        var index = n-1
+        var bulb = document.getElementsByClassName('bulb')[index]
+        var button = document.getElementsByClassName('btn')[index]
+        // check if light is on or off
+        var isLightOn = bulb.src == 'https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/413/original/pic_bulbon.gif'
+        // if light is on
+        if (isLightOn) {
+          // turn it off
+          bulb.src='https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/412/original/pic_bulboff.gif'
+          button.innerHTML = "Bulb "+n+" On"
+        } else { // if light is off
+          // turn it on
+          bulb.src='https://d14nx13ylsx7x8.cloudfront.net/lesson_image_blocks/assets/000/001/413/original/pic_bulbon.gif'
+          button.innerHTML = "Bulb "+n+" Off"
+        }
+        
+      }
+    </script>
+  </body>
+
+<footer class="container-fluid bg-4 text-center"> 
+  <div style="text-align: center">
+  
+
+<a style="color:white;font-size:30px;" href="
+    https://www.linkedin.com/in/toheeb-badru-21a8b015b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>   &nbsp;  &nbsp;
+<a style="color:white;font-size:30px;" href="
+   https://github.com/TBadru"><i class="fa fa-github" aria-hidden="true"></i></a> 
+
+
+
+
+</div>
+  
+  <p style="text-align: center;"><font color="white" > created with ❤ by Dayo Badru</font></p>
+
+   </div> 
+</div> 
+</div> 
+ </footer>
+</html>
+<!-- DAYO BADRU -->
